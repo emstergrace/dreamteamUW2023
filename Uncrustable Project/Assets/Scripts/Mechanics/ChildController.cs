@@ -8,7 +8,6 @@ using static Platformer.Core.Simulation;
 [RequireComponent(typeof(AnimationController), typeof(Collider2D))]
 public class ChildController : MonoBehaviour
 {
-
     internal AnimationController control;
     internal Collider2D _collider;
     internal AudioSource _audio;

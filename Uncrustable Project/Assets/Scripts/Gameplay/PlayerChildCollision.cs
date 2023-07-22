@@ -1,6 +1,8 @@
 using Platformer.Core;
 using Platformer.Mechanics;
 using Platformer.Model;
+using UnityEngine;
+
 namespace Platformer.Gameplay
 {
     public class PlayerChildCollision : Simulation.Event<PlayerChildCollision>
@@ -13,6 +15,7 @@ namespace Platformer.Gameplay
 
         public override void Execute()
         {
+            Debug.Log("Child Hit!");
         }
     }
 }
