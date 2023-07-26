@@ -8,6 +8,7 @@ using static Platformer.Core.Simulation;
 [RequireComponent(typeof(AnimationController), typeof(Collider2D))]
 public class ChildController : MonoBehaviour
 {
+    public bool following;
     internal AnimationController control;
     internal Collider2D _collider;
     internal AudioSource _audio;
@@ -21,6 +22,7 @@ public class ChildController : MonoBehaviour
         _collider = GetComponent<Collider2D>();
         _audio = GetComponent<AudioSource>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        following = false;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -36,6 +38,9 @@ public class ChildController : MonoBehaviour
 
     void Update()
     {
+        if (following){
+
+        }
         // if (path != null)
         // {
         //     if (mover == null) mover = path.CreateMover(control.maxSpeed * 0.5f);
