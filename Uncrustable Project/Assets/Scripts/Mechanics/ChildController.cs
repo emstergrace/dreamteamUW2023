@@ -5,11 +5,12 @@ using Platformer.Mechanics;
 using UnityEngine;
 using static Platformer.Core.Simulation;
 
-[RequireComponent(typeof(AnimationController), typeof(Collider2D))]
+[RequireComponent(typeof(Collider2D))]
 public class ChildController : MonoBehaviour
 {
-    public bool following;
-    internal AnimationController control;
+    public bool isCollected {get; set;}
+    public GameObject leader {get; set;}
+    public GameObject follower {get; set;}
     internal Collider2D _collider;
     internal AudioSource _audio;
     SpriteRenderer spriteRenderer;
@@ -18,11 +19,10 @@ public class ChildController : MonoBehaviour
 
     void Awake()
     {
-        control = GetComponent<AnimationController>();
         _collider = GetComponent<Collider2D>();
         _audio = GetComponent<AudioSource>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        following = false;
+        isCollected = false;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -38,13 +38,8 @@ public class ChildController : MonoBehaviour
 
     void Update()
     {
-        if (following){
-
+        if (isCollected){
+            
         }
-        // if (path != null)
-        // {
-        //     if (mover == null) mover = path.CreateMover(control.maxSpeed * 0.5f);
-        //     control.move.x = Mathf.Clamp(mover.Position.x - transform.position.x, -1, 1);
-        // }
     }
 }

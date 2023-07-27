@@ -18,6 +18,8 @@ namespace Platformer.Mechanics
         public AudioClip respawnAudio;
         public AudioClip ouchAudio;
 
+        public GameObject follower {get; set;}
+
         /// <summary>
         /// Max horizontal speed of the player.
         /// </summary>
