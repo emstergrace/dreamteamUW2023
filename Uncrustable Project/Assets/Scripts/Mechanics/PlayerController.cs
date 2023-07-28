@@ -19,6 +19,8 @@ namespace Platformer.Mechanics
         public AudioClip ouchAudio;
 
         public GameObject follower {get; set;}
+        public int followDistance;
+        private List<Vector3> storedPositions;
 
         /// <summary>
         /// Max horizontal speed of the player.
@@ -51,10 +53,24 @@ namespace Platformer.Mechanics
             collider2d = GetComponent<Collider2D>();
             spriteRenderer = GetComponent<SpriteRenderer>();
             animator = GetComponent<Animator>();
+            storedPositions = new List<Vector3>(); 
+
+            followDistance = 100;
         }
 
         protected override void Update()
         {
+            if (follower != null){
+                storedPositions.Add(transform.position);
+
+                if(storedPositions.Count > followDistance)
+                {
+                    follower.transform.position = storedPositions[0]; //move the player
+                    storedPositions.RemoveAt (0); //delete the position that player just move to
+                }
+            }
+
+
             if (controlEnabled)
             {
                 move.x = Input.GetAxis("Horizontal");

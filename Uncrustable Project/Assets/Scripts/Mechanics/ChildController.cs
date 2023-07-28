@@ -11,6 +11,8 @@ public class ChildController : MonoBehaviour
     public bool isCollected {get; set;}
     public GameObject leader {get; set;}
     public GameObject follower {get; set;}
+    public int followDistance;
+    private List<Vector3> storedPositions;
     internal Collider2D _collider;
     internal AudioSource _audio;
     SpriteRenderer spriteRenderer;
@@ -22,7 +24,10 @@ public class ChildController : MonoBehaviour
         _collider = GetComponent<Collider2D>();
         _audio = GetComponent<AudioSource>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        storedPositions = new List<Vector3>(); 
         isCollected = false;
+        
+        followDistance = 100;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -39,7 +44,15 @@ public class ChildController : MonoBehaviour
     void Update()
     {
         if (isCollected){
-            
+            if (follower != null){
+                storedPositions.Add(transform.position);
+
+                if(storedPositions.Count > followDistance)
+                {
+                    follower.transform.position = storedPositions[0]; //move the player
+                    storedPositions.RemoveAt (0); //delete the position that player just move to
+                }
+            }
         }
     }
 }
