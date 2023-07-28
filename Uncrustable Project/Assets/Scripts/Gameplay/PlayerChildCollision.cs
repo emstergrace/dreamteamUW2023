@@ -20,7 +20,8 @@ namespace Platformer.Gameplay
             if (child.isCollected){
                 return;
             }
-            
+
+            child.gameObject.layer = LayerMask.NameToLayer("Child");
             child.isCollected = true;
 
             if (player.follower != null){
