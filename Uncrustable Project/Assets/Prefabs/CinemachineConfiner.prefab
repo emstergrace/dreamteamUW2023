@@ -27,6 +27,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 26.41462, y: -1.2901306, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -41,6 +42,25 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -56,10 +76,13 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 123.5, y: 10}
-      - {x: -32, y: 10}
-      - {x: -35, y: 3}
-      - {x: -35, y: -14}
-      - {x: -18.5, y: -14}
-      - {x: -15, y: -8}
-      - {x: 123.5, y: -8}
+    - - {x: -15.340689, y: 5.278457}
+      - {x: -15.368277, y: 5.278566}
+      - {x: -34.04371, y: 5.284975}
+      - {x: -34.04981, y: -3.184022}
+      - {x: -30.943708, y: -3.182849}
+      - {x: -27.74728, y: -3.1790385}
+      - {x: -15.335487, y: -3.1615982}
+      - {x: -15.340688, y: 5.278457}
+      - {x: -15.340689, y: 5.278455}
+  m_UseDelaunayMesh: 0
