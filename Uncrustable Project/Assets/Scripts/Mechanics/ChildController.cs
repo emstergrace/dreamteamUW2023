@@ -12,6 +12,7 @@ public class ChildController : MonoBehaviour
     public GameObject leader {get; set;}
     public GameObject follower {get; set;}
     public int followDistance;
+    public int orderOfChildInLine;
     private List<Vector3> storedPositions;
     internal Collider2D _collider;
     internal AudioSource _audio;
@@ -28,6 +29,7 @@ public class ChildController : MonoBehaviour
         isCollected = false;
         
         followDistance = 100;
+        orderOfChildInLine = 0;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
