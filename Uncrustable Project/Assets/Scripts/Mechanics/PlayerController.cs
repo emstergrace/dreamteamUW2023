@@ -19,7 +19,7 @@ namespace Platformer.Mechanics
         public AudioClip ouchAudio;
 
         public IList<GameObject> childrenFollowing;
-        public int followDistance;
+        public static int followDistance = 100;
         private List<Vector3> storedPositions;
 
         /// <summary>
@@ -55,23 +55,10 @@ namespace Platformer.Mechanics
             animator = GetComponent<Animator>();
             storedPositions = new List<Vector3>(); 
             childrenFollowing = new List<GameObject>();
-
-            followDistance = 100;
         }
 
         protected override void Update()
         {
-            if (follower != null){
-                storedPositions.Add(transform.position);
-
-                if(storedPositions.Count > followDistance)
-                {
-                    follower.transform.position = storedPositions[0]; //move the player
-                    storedPositions.RemoveAt (0); //delete the position that player just move to
-                }
-            }
-
-
             if (controlEnabled)
             {
                 move.x = Input.GetAxis("Horizontal");

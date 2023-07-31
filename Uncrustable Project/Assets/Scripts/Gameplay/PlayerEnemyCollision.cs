@@ -20,29 +20,12 @@ namespace Platformer.Gameplay
 
         public override void Execute()
         {
-            var willHurtEnemy = player.Bounds.center.y >= enemy.Bounds.max.y;
-
-            if (willHurtEnemy)
-            {
-                var enemyHealth = enemy.GetComponent<Health>();
-                if (enemyHealth != null)
-                {
-                    enemyHealth.Decrement();
-                    if (!enemyHealth.IsAlive)
-                    {
-                        Schedule<EnemyDeath>().enemy = enemy;
-                        player.Bounce(2);
-                    }
-                    else
-                    {
-                        player.Bounce(7);
-                    }
-                }
-                else
-                {
-                    Schedule<EnemyDeath>().enemy = enemy;
-                    player.Bounce(2);
-                }
+            var numOfChildren = player.childrenFollowing.Count;
+            if (numOfChildren > 0){
+                var childGameObject = player.childrenFollowing[numOfChildren-1];
+                player.childrenFollowing.RemoveAt(numOfChildren-1);
+                var childController = childGameObject.GetComponent<ChildController>();
+                
             }
             else
             {

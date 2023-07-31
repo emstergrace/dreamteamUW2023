@@ -24,22 +24,9 @@ namespace Platformer.Gameplay
             child.gameObject.layer = LayerMask.NameToLayer("Child");
             child.isCollected = true;
 
-            if (player.follower != null){
-                Debug.Log("Player Follower Not Null");
-                var lastFollower = player.follower.GetComponent<ChildController>();
-
-                while(lastFollower.follower != null){
-                    lastFollower = lastFollower.follower.GetComponent<ChildController>();
-                }
-                Debug.Log("Child added to end of line");
-                lastFollower.follower = child.gameObject;
-                child.leader = lastFollower.gameObject;
-            } else {
-                Debug.Log("First child added");
-                player.follower = child.gameObject;
-                child.leader = player.gameObject;
-            }
-            
+            child.player = player.gameObject;
+            child.childOrder = player.childrenFollowing.Count;
+            player.childrenFollowing.Add(child.gameObject);
         }
     }
 }

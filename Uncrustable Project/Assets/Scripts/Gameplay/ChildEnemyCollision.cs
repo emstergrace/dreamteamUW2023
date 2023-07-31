@@ -13,6 +13,8 @@ public class ChildEnemyCollision : Simulation.Event<ChildEnemyCollision>
     PlatformerModel model = Simulation.GetModel<PlatformerModel>();
     // Start is called before the first frame update
     public override void Execute(){
-        
+        if(child.isCollected){
+            
+        }
     }
 }
