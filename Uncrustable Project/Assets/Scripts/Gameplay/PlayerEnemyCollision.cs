@@ -25,7 +25,7 @@ namespace Platformer.Gameplay
                 var childGameObject = player.childrenFollowing[numOfChildren-1];
                 player.childrenFollowing.RemoveAt(numOfChildren-1);
                 var childController = childGameObject.GetComponent<ChildController>();
-                
+
             }
             else
             {
