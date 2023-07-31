@@ -11,7 +11,7 @@ public class ChildController : MonoBehaviour
     public bool isCollected {get; set;}
     public GameObject player {get; set;}
     public int childOrder {get; set;}
-    public int followDistance;
+    public static int followDistance = 100;
     private List<Vector3> storedPositions;
     internal Collider2D _collider;
     internal AudioSource _audio;
