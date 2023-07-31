@@ -9,8 +9,8 @@ using static Platformer.Core.Simulation;
 public class ChildController : MonoBehaviour
 {
     public bool isCollected {get; set;}
-    public GameObject leader {get; set;}
-    public GameObject follower {get; set;}
+    public GameObject player {get; set;}
+    public int childOrder {get; set;}
     public int followDistance;
     private List<Vector3> storedPositions;
     internal Collider2D _collider;
@@ -44,15 +44,7 @@ public class ChildController : MonoBehaviour
     void Update()
     {
         if (isCollected){
-            if (follower != null){
-                storedPositions.Add(transform.position);
-
-                if(storedPositions.Count > followDistance)
-                {
-                    follower.transform.position = storedPositions[0]; //move the player
-                    storedPositions.RemoveAt (0); //delete the position that player just move to
-                }
-            }
+            
         }
     }
 }

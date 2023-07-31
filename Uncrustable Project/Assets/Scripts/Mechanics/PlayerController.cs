@@ -18,7 +18,7 @@ namespace Platformer.Mechanics
         public AudioClip respawnAudio;
         public AudioClip ouchAudio;
 
-        public GameObject follower {get; set;}
+        public IList<GameObject> childrenFollowing;
         public int followDistance;
         private List<Vector3> storedPositions;
 
@@ -54,6 +54,7 @@ namespace Platformer.Mechanics
             spriteRenderer = GetComponent<SpriteRenderer>();
             animator = GetComponent<Animator>();
             storedPositions = new List<Vector3>(); 
+            childrenFollowing = new List<GameObject>();
 
             followDistance = 100;
         }
