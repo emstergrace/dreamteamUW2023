@@ -1467,7 +1467,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6c9044cba1c5d04d9daa594435e90a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  followDistance: 0
 --- !u!70 &251597816
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -4043,7 +4042,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6c9044cba1c5d04d9daa594435e90a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  followDistance: 0
 --- !u!70 &620915983
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -5156,12 +5154,12 @@ PrefabInstance:
     - target: {fileID: 1658460978237467174, guid: f158aa2be3df6489185ef721f6fd79c1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.62
+      value: -7.49
       objectReference: {fileID: 0}
     - target: {fileID: 1658460978237467174, guid: f158aa2be3df6489185ef721f6fd79c1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.21
+      value: -3.71
       objectReference: {fileID: 0}
     - target: {fileID: 1658460978237467174, guid: f158aa2be3df6489185ef721f6fd79c1,
         type: 3}
@@ -5212,6 +5210,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 1702612949800919892, guid: f158aa2be3df6489185ef721f6fd79c1,
+        type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1702612949800919892, guid: f158aa2be3df6489185ef721f6fd79c1,
+        type: 3}
+      propertyPath: m_GravityScale
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6094,7 +6102,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6c9044cba1c5d04d9daa594435e90a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  followDistance: 0
 --- !u!95 &898150195
 Animator:
   serializedVersion: 5
