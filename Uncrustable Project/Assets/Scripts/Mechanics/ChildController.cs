@@ -42,13 +42,13 @@ public class ChildController : MonoBehaviour
     void Update()
     {
         if (isCollected){
-                storedPositions.Add(player.transform.position);
+            storedPositions.Add(player.transform.position);
 
-                if(storedPositions.Count > (followDistance * (childOrder+1)))
-                {
-                    gameObject.transform.position = storedPositions[0]; //move the player
-                    storedPositions.RemoveAt (0); //delete the position that player just move to
-                }
+            if(storedPositions.Count > (followDistance * (childOrder+1)))
+            {
+                gameObject.transform.position = storedPositions[0]; //move the player
+                storedPositions.RemoveAt (0); //delete the position that player just move to
+            }
         }
     }
 }
