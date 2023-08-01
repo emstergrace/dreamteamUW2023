@@ -28,18 +28,19 @@ namespace Platformer.Mechanics
             spriteRenderer = GetComponent<SpriteRenderer>();
         }
 
-        void OnCollisionEnter2D(Collision2D collision)
-        {
+        void OnTriggerEnter2D(Collider2D collision) {
             var player = collision.gameObject.GetComponent<PlayerController>();
             var child = collision.gameObject.GetComponent<ChildController>();
             if (player != null)
             {
+                Debug.Log("Player hit by witch");
                 var ev = Schedule<PlayerEnemyCollision>();
                 ev.player = player;
                 ev.enemy = this;
             }
 
             if (child != null && child.isCollected){
+                Debug.Log("Player hit by witch");
                 var ev = Schedule<ChildEnemyCollision>();
                 ev.child = child;
                 ev.enemy = this;
@@ -49,7 +50,7 @@ namespace Platformer.Mechanics
         void Update()
         {
             var playerTransform = GameObject.FindWithTag("Player").transform;
-            gameObject.transform.up = playerTransform.up;
+            transform.position = new Vector3(transform.position.x, playerTransform.position.y, transform.position.z);
         }
 
     }

@@ -51,4 +51,8 @@ public class ChildController : MonoBehaviour
             }
         }
     }
+
+    public void CaughtByWitch(){
+        Destroy(this);
+    }
 }
