@@ -6,10 +6,9 @@ using UnityEngine.UI;
 public class ScoreManager : MonoBehaviour
 {
 
-    public int score; // this is the score for the current game
-    public int highScore; // temporarily testing with just one high score stored, instead of 5
-    //public List<int> highScores = new List<int>(); //the first 5 items of this list will be displayed. Undecided if it should save more than that
-    public TextMeshProUGUI scoreText, highScoreText;
+    int score; // this is the score for the current game
+    int highScore; // temporarily testing with just one high score stored, instead of 5
+    [SerializeField] TextMeshProUGUI scoreText, highScoreText;
 
 
     private void Start()
@@ -18,15 +17,10 @@ public class ScoreManager : MonoBehaviour
         UpdateHighScoreText();
     }
 
-    // prob a cleaner way to do this part.
     public void AddScore(int amount)
     {
         score += amount;
-        UpdateHighScore();
-    }
-    public void SubtractScore(int amount)
-    {
-        score -= amount;
+        UpdateScoreText();
         UpdateHighScore();
     }
 
@@ -45,7 +39,7 @@ public class ScoreManager : MonoBehaviour
 
     public void UpdateHighScoreText()
     {
-        highScoreText.text = $"HighScore: {PlayerPrefs.GetInt("HighScore", 0)}";
+        highScoreText.text = $"High Score: {PlayerPrefs.GetInt("HighScore", 0)}";
     }
 
     public void UpdateScoreText()

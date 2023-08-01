@@ -4,11 +4,16 @@ using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Menu : MonoBehaviour
+public class GameOver : MonoBehaviour
 {
     public void OnPlayButton()
     {
-        SceneManager.LoadScene("Levels/Scenes/UPDATEDLEVELONE");
+        SceneManager.LoadScene("Levels/Scenes/SampleScene");
+    }
+
+    public void OnMenuButton()
+    {
+        SceneManager.LoadScene("UI/Scenes/Main Menu");
     }
     public void OnQuitButton()
     {

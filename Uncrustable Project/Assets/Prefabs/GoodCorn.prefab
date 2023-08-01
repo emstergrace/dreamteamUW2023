@@ -139,3 +139,4 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 08b6bc897302db44fa95d8d2dc7571fa, type: 3}
   collectedAnimation:
   - {fileID: 21300000, guid: 08b6bc897302db44fa95d8d2dc7571fa, type: 3}
+  objectPointValue: 500
