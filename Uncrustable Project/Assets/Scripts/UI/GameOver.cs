@@ -8,7 +8,7 @@ public class GameOver : MonoBehaviour
 {
     public void OnPlayButton()
     {
-        SceneManager.LoadScene("Levels/Scenes/SampleScene");
+        SceneManager.LoadScene("Levels/Scenes/UPDATEDLEVELONE");
     }
 
     public void OnMenuButton()
