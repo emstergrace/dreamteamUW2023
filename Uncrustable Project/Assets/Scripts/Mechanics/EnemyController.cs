@@ -16,6 +16,7 @@ namespace Platformer.Mechanics
         internal AnimationController control;
         internal Collider2D _collider;
         internal AudioSource _audio;
+        internal float movementRight = 1f;
         SpriteRenderer spriteRenderer;
 
         public Bounds Bounds => _collider.bounds;
@@ -50,7 +51,11 @@ namespace Platformer.Mechanics
         void Update()
         {
             var playerTransform = GameObject.FindWithTag("Player").transform;
-            transform.position = new Vector3(transform.position.x, playerTransform.position.y, transform.position.z);
+
+            var current = transform.position.x;
+            var next = current + (movementRight * Time.deltaTime);
+
+            transform.position = new Vector3(next, playerTransform.position.y, transform.position.z);
         }
 
     }
