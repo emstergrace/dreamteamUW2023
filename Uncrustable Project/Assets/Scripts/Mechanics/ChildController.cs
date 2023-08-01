@@ -9,9 +9,9 @@ using static Platformer.Core.Simulation;
 public class ChildController : MonoBehaviour
 {
     public bool isCollected {get; set;}
-    public GameObject leader {get; set;}
-    public GameObject follower {get; set;}
-    public int followDistance;
+    public GameObject player {get; set;}
+    public int childOrder {get; set;}
+    public static int followDistance = 100;
     private List<Vector3> storedPositions;
     internal Collider2D _collider;
     internal AudioSource _audio;
@@ -26,8 +26,6 @@ public class ChildController : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         storedPositions = new List<Vector3>(); 
         isCollected = false;
-        
-        followDistance = 100;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -44,15 +42,17 @@ public class ChildController : MonoBehaviour
     void Update()
     {
         if (isCollected){
-            if (follower != null){
-                storedPositions.Add(transform.position);
+            storedPositions.Add(player.transform.position);
 
-                if(storedPositions.Count > followDistance)
-                {
-                    follower.transform.position = storedPositions[0]; //move the player
-                    storedPositions.RemoveAt (0); //delete the position that player just move to
-                }
+            if(storedPositions.Count > (followDistance * (childOrder+1)))
+            {
+                gameObject.transform.position = storedPositions[0]; //move the player
+                storedPositions.RemoveAt (0); //delete the position that player just move to
             }
         }
+    }
+
+    public void CaughtByWitch(){
+        Destroy(gameObject);
     }
 }
