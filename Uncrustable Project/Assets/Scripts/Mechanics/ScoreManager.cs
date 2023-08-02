@@ -5,9 +5,6 @@ using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour
 {
-
-    int score; // this is the score for the current game
-    int highScore; // temporarily testing with just one high score stored, instead of 5
     [SerializeField] TextMeshProUGUI scoreText, highScoreText;
 
 
@@ -19,18 +16,18 @@ public class ScoreManager : MonoBehaviour
 
     public void AddScore(int amount)
     {
-        score += amount;
+        ScoreVariables.totalScore += amount;
         UpdateScoreText();
         UpdateHighScore();
     }
 
     public void UpdateHighScore()
     {
-        if (score > PlayerPrefs.GetInt("HighScore", 0))
+        if (ScoreVariables.totalScore > PlayerPrefs.GetInt("HighScore", 0))
         {
             /* this will save the high score on the user's computer, so it is saved between playthroughs. If the player uses a different computer, however,
              * they will not be able to see their previous scores */
-            PlayerPrefs.SetInt("HighScore", score);
+            PlayerPrefs.SetInt("HighScore", ScoreVariables.totalScore);
 
             // update the high score text dynamically
             UpdateHighScoreText();
@@ -44,6 +41,6 @@ public class ScoreManager : MonoBehaviour
 
     public void UpdateScoreText()
     {
-        scoreText.text = $"Score: {score, 0}";
+        scoreText.text = $"Score: {ScoreVariables.totalScore, 0}";
     }
 }
