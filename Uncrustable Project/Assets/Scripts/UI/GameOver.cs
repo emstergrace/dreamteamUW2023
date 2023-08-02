@@ -5,6 +5,7 @@ public class GameOver : MonoBehaviour
 {
     public void OnPlayButton()
     {
+        ScoreVariables.totalScore = 0;
         SceneManager.LoadScene("Levels/Scenes/UPDATEDLEVELONE");
     }
 

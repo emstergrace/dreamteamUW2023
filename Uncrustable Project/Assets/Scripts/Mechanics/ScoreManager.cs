@@ -43,4 +43,9 @@ public class ScoreManager : MonoBehaviour
     {
         scoreText.text = $"Score: {ScoreVariables.totalScore, 0}";
     }
+
+    public void ResetScore()
+    {
+        ScoreVariables.totalScore = 0;
+    }
 }
