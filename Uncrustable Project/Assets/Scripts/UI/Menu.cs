@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,7 +5,8 @@ public class Menu : MonoBehaviour
 {
     public void OnPlayButton()
     {
-        SceneManager.LoadScene("Levels/Scenes/SampleScene");
+        ScoreVariables.totalScore = 0;
+        SceneManager.LoadScene("Levels/Scenes/UPDATEDLEVELONE");
     }
     public void OnQuitButton()
     {

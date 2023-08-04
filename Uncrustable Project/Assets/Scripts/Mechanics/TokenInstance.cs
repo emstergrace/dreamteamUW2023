@@ -1,4 +1,5 @@
 using Platformer.Gameplay;
+using UnityEditor;
 using UnityEngine;
 using static Platformer.Core.Simulation;
 
@@ -18,6 +19,9 @@ namespace Platformer.Mechanics
         public bool randomAnimationStartTime = false;
         [Tooltip("List of frames that make up the animation.")]
         public Sprite[] idleAnimation, collectedAnimation;
+
+        [SerializeField]
+        public int objectPointValue;
 
         internal Sprite[] sprites = new Sprite[0];
 
@@ -47,6 +51,7 @@ namespace Platformer.Mechanics
 
         void OnPlayerEnter(PlayerController player)
         {
+            GameObject.FindGameObjectWithTag("ScoreManager").GetComponent<ScoreManager>().AddScore(objectPointValue);
             if (collected) return;
             //disable the gameObject and remove it from the controller update list.
             frame = 0;
