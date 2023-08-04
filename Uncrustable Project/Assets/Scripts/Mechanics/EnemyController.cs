@@ -16,7 +16,7 @@ namespace Platformer.Mechanics
         internal AnimationController control;
         internal Collider2D _collider;
         internal AudioSource _audio;
-        internal float movementRight = 1f;
+        internal float movementRight;
         SpriteRenderer spriteRenderer;
 
         public Bounds Bounds => _collider.bounds;
@@ -27,6 +27,7 @@ namespace Platformer.Mechanics
             _collider = GetComponent<Collider2D>();
             _audio = GetComponent<AudioSource>();
             spriteRenderer = GetComponent<SpriteRenderer>();
+            movementRight = .5f;
         }
 
         void OnTriggerEnter2D(Collider2D collision) {
@@ -54,8 +55,17 @@ namespace Platformer.Mechanics
 
             var current = transform.position.x;
             var next = current + (movementRight * Time.deltaTime);
+            
+            if (movementRight < 4.2f)
+            {
+                movementRight += (movementRight * Time.deltaTime);
+            } 
 
             transform.position = new Vector3(next, playerTransform.position.y, transform.position.z);
+        }
+
+        public void ResetMovementSpeed(){
+            movementRight = .5f;
         }
 
     }

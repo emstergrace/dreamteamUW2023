@@ -25,6 +25,7 @@ namespace Platformer.Gameplay
             if (numOfChildren > 0){
                 var childGameObject = player.childrenFollowing[numOfChildren-1];
                 player.childrenFollowing.RemoveAt(numOfChildren-1);
+
                 var childController = childGameObject.GetComponent<ChildController>();
                 childController.CaughtByWitch();
             }
@@ -32,6 +33,8 @@ namespace Platformer.Gameplay
             {
                 Schedule<PlayerDeath>();
             }
+
+            enemy.GetComponent<EnemyController>().ResetMovementSpeed();
         }
     }
 }
