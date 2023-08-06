@@ -18,7 +18,7 @@ namespace Platformer.Mechanics
         internal AnimationController control;
         internal Collider2D _collider;
         internal AudioSource _audio;
-        internal float movementRight = 1f;
+        internal float movementRight;
         SpriteRenderer spriteRenderer;
         public float Pause {get; set;}
 
