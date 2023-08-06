@@ -12,12 +12,15 @@ namespace Platformer.Mechanics
     [RequireComponent(typeof(AnimationController), typeof(Collider2D))]
     public class EnemyController : MonoBehaviour
     {
+        private static float MAX_WITCH_SPEED = 4.2f;
+        private static float WITCH_PAUSE_TIME = 3f;
         public AudioClip ouch;
         internal AnimationController control;
         internal Collider2D _collider;
         internal AudioSource _audio;
         internal float movementRight = 1f;
         SpriteRenderer spriteRenderer;
+        public float Pause {get; set;}
 
         public Bounds Bounds => _collider.bounds;
 
@@ -27,6 +30,8 @@ namespace Platformer.Mechanics
             _collider = GetComponent<Collider2D>();
             _audio = GetComponent<AudioSource>();
             spriteRenderer = GetComponent<SpriteRenderer>();
+            movementRight = .5f;
+            Pause = WITCH_PAUSE_TIME;
         }
 
         void OnTriggerEnter2D(Collider2D collision) {
@@ -50,13 +55,25 @@ namespace Platformer.Mechanics
 
         void Update()
         {
-            var playerTransform = GameObject.FindWithTag("Player").transform;
+            if (Pause <= 0f){
+                var playerTransform = GameObject.FindWithTag("Player").transform;
 
-            var current = transform.position.x;
-            var next = current + (movementRight * Time.deltaTime);
+                var currentX = transform.position.x;
+                var nextX = currentX + (movementRight * Time.deltaTime);
 
-            transform.position = new Vector3(next, playerTransform.position.y, transform.position.z);
+                if (movementRight < MAX_WITCH_SPEED)
+                {
+                    movementRight += movementRight * Time.deltaTime;
+                }
+
+                transform.position = new Vector3(nextX, playerTransform.position.y, transform.position.z);
+            } else {
+                Pause -= Time.deltaTime;
+            }
         }
 
+        public void ResetMovementSpeed(){
+            movementRight = .5f;
+        }
     }
 }
