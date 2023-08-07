@@ -18,9 +18,9 @@ namespace Platformer.Mechanics
         internal AnimationController control;
         internal Collider2D _collider;
         internal AudioSource _audio;
-        internal float movementRight;
+        internal float movementSpeed;
         SpriteRenderer spriteRenderer;
-        public float Pause {get; set;}
+        public float Pause { get; set; }
 
         public Bounds Bounds => _collider.bounds;
 
@@ -30,7 +30,7 @@ namespace Platformer.Mechanics
             _collider = GetComponent<Collider2D>();
             _audio = GetComponent<AudioSource>();
             spriteRenderer = GetComponent<SpriteRenderer>();
-            movementRight = .5f;
+            movementSpeed = .5f;
             Pause = WITCH_PAUSE_TIME;
         }
 
@@ -58,22 +58,28 @@ namespace Platformer.Mechanics
             if (Pause <= 0f){
                 var playerTransform = GameObject.FindWithTag("Player").transform;
 
-                var currentX = transform.position.x;
-                var nextX = currentX + (movementRight * Time.deltaTime);
+                var directionToPlayer = CalculateDirectionToPlayer(playerTransform);
+                var movementTowardsPlayer = directionToPlayer * (movementSpeed * Time.deltaTime);
 
-                if (movementRight < MAX_WITCH_SPEED)
+                if (movementSpeed < MAX_WITCH_SPEED)
                 {
-                    movementRight += movementRight * Time.deltaTime;
+                    movementSpeed += movementSpeed * Time.deltaTime;
                 }
 
-                transform.position = new Vector3(nextX, playerTransform.position.y, transform.position.z);
+                gameObject.transform.position = movementTowardsPlayer + gameObject.transform.position;
             } else {
                 Pause -= Time.deltaTime;
             }
         }
 
         public void ResetMovementSpeed(){
-            movementRight = .5f;
+            movementSpeed = .5f;
+        }
+
+        private Vector3 CalculateDirectionToPlayer(Transform playerTransform){
+            var direction =  playerTransform.position - gameObject.transform.position;
+            direction.Normalize();
+            return direction;
         }
     }
 }
