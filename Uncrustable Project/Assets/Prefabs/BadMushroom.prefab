@@ -32,7 +32,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6050139934214508757
 SpriteRenderer:
@@ -139,4 +139,4 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 298afe0e38e9d604c9e772bb28a49179, type: 3}
   collectedAnimation:
   - {fileID: 21300000, guid: 298afe0e38e9d604c9e772bb28a49179, type: 3}
-  objectPointValue: -200
+  objectPointValue: -840
