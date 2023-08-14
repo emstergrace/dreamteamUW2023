@@ -158,8 +158,19 @@ namespace Platformer.Mechanics
                             velocity = velocity - projection * currentNormal;
                         }
                     }
-                    else
+                    else 
                     {
+                        bool hitCeiling = false;
+                        foreach (var cast in hitBuffer){
+                            if (cast.normal.y == -1f)
+                                hitCeiling = true;
+                            //Debug.Log("Raycast " + cast.normal);
+                        }
+                        
+                        if(hitCeiling){
+                            velocity.x *= 0;
+                            velocity.y = Mathf.Min(velocity.y, 0);
+                        }
                         //We are airborne, but hit something, so cancel vertical up and horizontal velocity.
                         // velocity.x *= 0;
                         // velocity.y = Mathf.Min(velocity.y, 0);
