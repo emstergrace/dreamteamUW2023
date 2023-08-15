@@ -24,7 +24,7 @@ namespace Platformer.Mechanics
 
         public Bounds Bounds => _collider.bounds;
 
-        void Awake()
+        void Start()
         {
             control = GetComponent<AnimationController>();
             _collider = GetComponent<Collider2D>();
