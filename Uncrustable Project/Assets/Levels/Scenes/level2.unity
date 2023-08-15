@@ -18611,6 +18611,18 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1481688575}
   m_SourcePrefab: {fileID: 100100000, guid: 7d60c822c3f1b408ea7a00ecdb5e047a, type: 3}
+--- !u!114 &930491549 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114230831923080080, guid: 7d60c822c3f1b408ea7a00ecdb5e047a,
+    type: 3}
+  m_PrefabInstance: {fileID: 930491548}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1481688574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 709ee11994a2f44658e5fc9887c45081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &940777628
 GameObject:
   m_ObjectHideFlags: 0
@@ -36730,7 +36742,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   model:
     virtualCamera: {fileID: 1112001522}
-    player: {fileID: 0}
+    player: {fileID: 930491549}
     spawnPoint: {fileID: 1375373355}
     jumpModifier: 0.9
     jumpDeceleration: 0
