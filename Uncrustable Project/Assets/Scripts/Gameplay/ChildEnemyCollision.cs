@@ -8,13 +8,16 @@ using UnityEngine;
 public class ChildEnemyCollision : Simulation.Event<ChildEnemyCollision>
 {
     public ChildController child;
-    public EnemyController enemy;
+    public EnemyController witch;
 
     PlatformerModel model = Simulation.GetModel<PlatformerModel>();
-    // Start is called before the first frame update
+
     public override void Execute(){
-        if(child.isCollected){
-            
-        }
+        child.CaughtByWitch();
+        Debug.Log("Child eaten! It was tragic.");
+        AudioSource.PlayClipAtPoint(witch.nomnomnom, witch.transform.position);
+
+        witch.ResetMovementSpeed();
+        witch.WaitForPreyToRun();
     }
 }
