@@ -13,7 +13,7 @@ namespace Platformer.Gameplay
     /// <typeparam name="EnemyCollision"></typeparam>
     public class PlayerEnemyCollision : Simulation.Event<PlayerEnemyCollision>
     {
-        public EnemyController enemy;
+        public EnemyController witch;
         public PlayerController player;
 
         PlatformerModel model = Simulation.GetModel<PlatformerModel>();
@@ -28,13 +28,16 @@ namespace Platformer.Gameplay
 
                 var childController = childGameObject.GetComponent<ChildController>();
                 childController.CaughtByWitch();
+                Debug.Log("Child eaten! It was tragic.");
+                AudioSource.PlayClipAtPoint(witch.nomnomnom, witch.transform.position);
             }
             else
             {
+                // AudioSource.PlayClipAtPoint(witch.childrenAreDelicious, witch.transform.position);
                 Schedule<PlayerDeath>();
             }
 
-            enemy.GetComponent<EnemyController>().ResetMovementSpeed();
+            witch.GetComponent<EnemyController>().ResetMovementSpeed();
         }
     }
 }

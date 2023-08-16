@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using Platformer.Gameplay;
 using UnityEngine;
@@ -14,7 +15,8 @@ namespace Platformer.Mechanics
     {
         private static float MAX_WITCH_SPEED = 4.2f;
         private static float WITCH_PAUSE_TIME = 3f;
-        public AudioClip ouch;
+        public AudioClip nomnomnom;
+        public AudioClip childrenAreDelicious;
         internal AnimationController control;
         internal Collider2D _collider;
         internal AudioSource _audio;
@@ -31,7 +33,7 @@ namespace Platformer.Mechanics
             _audio = GetComponent<AudioSource>();
             spriteRenderer = GetComponent<SpriteRenderer>();
             movementSpeed = .5f;
-            Pause = WITCH_PAUSE_TIME;
+            WaitForPreyToRun();
         }
 
         void OnTriggerEnter2D(Collider2D collision) {
@@ -42,44 +44,69 @@ namespace Platformer.Mechanics
                 Debug.Log("Player hit by witch");
                 var ev = Schedule<PlayerEnemyCollision>();
                 ev.player = player;
-                ev.enemy = this;
+                ev.witch = this;
             }
 
-            if (child != null && child.isCollected){
+            if (child != null){
                 Debug.Log("Player hit by witch");
                 var ev = Schedule<ChildEnemyCollision>();
                 ev.child = child;
-                ev.enemy = this;
+                ev.witch = this;
             }
         }
 
         void Update()
         {
-            if (Pause <= 0f){
-                var playerTransform = GameObject.FindWithTag("Player").transform;
-
-                var directionToPlayer = CalculateDirectionToPlayer(playerTransform);
-                var movementTowardsPlayer = directionToPlayer * (movementSpeed * Time.deltaTime);
-
-                if (movementSpeed < MAX_WITCH_SPEED)
-                {
-                    movementSpeed += movementSpeed * Time.deltaTime;
-                }
-
-                gameObject.transform.position = movementTowardsPlayer + gameObject.transform.position;
-            } else {
+            if (Pause > 0f){
                 Pause -= Time.deltaTime;
             }
+
+            Act();
+        }
+
+        private void Act()
+        {
+            if (movementSpeed < MAX_WITCH_SPEED)
+            {
+                movementSpeed += movementSpeed * Time.deltaTime;
+            }
+            var targetPositionGameObject = CalculateClosestEdibleChild();
+
+            var directionTowardTarget = CalculateDirectionToTarget(targetPositionGameObject.transform);
+            var movementTowardsTarget = directionTowardTarget * (movementSpeed * Time.deltaTime);
+
+            gameObject.transform.position = movementTowardsTarget + gameObject.transform.position;
         }
 
         public void ResetMovementSpeed(){
             movementSpeed = .5f;
         }
 
-        private Vector3 CalculateDirectionToPlayer(Transform playerTransform){
-            var direction =  playerTransform.position - gameObject.transform.position;
-            direction.Normalize();
-            return direction;
+        public void WaitForPreyToRun(){
+            Pause = WITCH_PAUSE_TIME;
+        }
+
+        private Vector3 CalculateDirectionToTarget(Transform targetTransform){
+            return (targetTransform.position - gameObject.transform.position).normalized;
+        }
+
+        private GameObject CalculateClosestEdibleChild(){
+            var childrenGameObjects = GameObject.FindGameObjectsWithTag("Child");
+            var playerGameObject = GameObject.FindGameObjectWithTag("Player");
+
+            var lowestXValue = playerGameObject.transform.position.x;
+            var lowestXValueObject = playerGameObject;
+
+            foreach (var child in childrenGameObjects)
+            {
+                var childX = child.transform.position.x;
+                if(childX < lowestXValue){
+                    lowestXValue = childX;
+                    lowestXValueObject = child;
+                }
+            }
+
+            return lowestXValueObject;
         }
     }
 }
