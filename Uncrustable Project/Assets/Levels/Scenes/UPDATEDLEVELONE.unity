@@ -225,6 +225,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -735,6 +740,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -2399,6 +2409,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -3228,6 +3243,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -3471,6 +3491,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -4786,6 +4811,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -5561,6 +5591,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -2230533945578310074, guid: b0da12c254219de44bdd566328f8d3f4,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -2230533945578310074, guid: b0da12c254219de44bdd566328f8d3f4,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -6560,6 +6595,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -7606,6 +7646,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -8105,6 +8150,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -8805,6 +8855,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -8962,6 +9017,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -9117,6 +9177,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -9566,6 +9631,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -10361,6 +10431,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -11153,6 +11228,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -11386,6 +11466,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -11999,6 +12084,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -12154,6 +12244,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -12313,6 +12408,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -12468,6 +12568,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -13134,6 +13239,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -13289,6 +13399,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -14986,6 +15101,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -17078,6 +17198,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -2230533945578310074, guid: b0da12c254219de44bdd566328f8d3f4,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -2230533945578310074, guid: b0da12c254219de44bdd566328f8d3f4,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -17263,6 +17388,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -17424,6 +17554,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -18820,6 +18955,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -20869,6 +21009,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -21109,6 +21254,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -21964,6 +22114,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -23566,7 +23721,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.9821942, y: 0.124756336, z: -9}
+  m_LocalPosition: {x: 3.6454186, y: 0.12336707, z: -9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -24433,6 +24588,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -27208,6 +27368,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -27363,6 +27528,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -27859,6 +28029,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -28268,6 +28443,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -28501,6 +28681,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -29933,6 +30118,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -30517,6 +30707,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -32318,6 +32513,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -34137,6 +34337,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -34708,6 +34913,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -35186,6 +35396,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -35335,6 +35550,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -35700,6 +35920,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -36453,6 +36678,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -37253,6 +37483,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -37580,6 +37815,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -38960,6 +39200,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -40174,6 +40419,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -41139,6 +41389,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -41925,6 +42180,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -43123,6 +43383,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -44317,6 +44582,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -2230533945578310074, guid: b0da12c254219de44bdd566328f8d3f4,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -2230533945578310074, guid: b0da12c254219de44bdd566328f8d3f4,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -45063,6 +45333,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -46851,6 +47126,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -50429,6 +50709,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -51865,6 +52150,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -52798,6 +53088,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -54367,6 +54662,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -54816,6 +55116,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -55137,6 +55442,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -55559,6 +55869,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -57265,6 +57580,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -57676,6 +57996,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -57825,6 +58150,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -58727,6 +59057,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -58960,6 +59295,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -60042,6 +60382,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -60281,6 +60626,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -60608,6 +60958,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -60933,6 +61288,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -61174,6 +61534,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -61331,6 +61696,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -61480,6 +61850,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -63051,6 +63426,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -64140,6 +64520,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -66247,6 +66632,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -66396,6 +66786,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -67143,6 +67538,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -67636,6 +68036,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -67947,6 +68352,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -69424,6 +69834,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -69913,6 +70328,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -70825,6 +71245,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -71144,6 +71569,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -71377,6 +71807,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -72346,6 +72781,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -72793,6 +73233,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -74014,6 +74459,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -74163,6 +74613,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -75285,6 +75740,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -76506,6 +76966,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -2230533945578310074, guid: b0da12c254219de44bdd566328f8d3f4,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -2230533945578310074, guid: b0da12c254219de44bdd566328f8d3f4,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -76655,6 +77120,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -77702,6 +78172,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -78783,6 +79258,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -80002,6 +80482,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -80494,6 +80979,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -83335,6 +83825,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -86051,6 +86546,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -86502,6 +87002,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -87525,6 +88030,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -87758,6 +88268,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -87913,6 +88428,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -88148,6 +88668,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
@@ -89154,6 +89679,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -89711,6 +90241,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
       propertyPath: idleAnimation.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -89860,6 +90395,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 658549827}
     m_Modifications:
+    - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
+        type: 3}
+      propertyPath: tokenCollectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
     - target: {fileID: -5099855358171973024, guid: fc08aef954d748e43a8f593da95e30e5,
         type: 3}
       propertyPath: idleAnimation.Array.size
