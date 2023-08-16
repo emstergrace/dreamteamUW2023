@@ -15,7 +15,6 @@ public class ChildEnemyCollision : Simulation.Event<ChildEnemyCollision>
     public override void Execute(){
         child.CaughtByWitch();
         Debug.Log("Child eaten! It was tragic.");
-        AudioSource.PlayClipAtPoint(witch.nomnomnom, witch.transform.position);
 
         witch.ResetMovementSpeed();
         witch.WaitForPreyToRun();

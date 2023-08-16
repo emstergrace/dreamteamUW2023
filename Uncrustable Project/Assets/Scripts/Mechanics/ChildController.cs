@@ -11,6 +11,7 @@ public class ChildController : MonoBehaviour
     public bool isCollected {get; set;}
     public GameObject player {get; set;}
     public int childOrder {get; set;}
+    public AudioClip scream;
     public static int followDistance = 50;
     private List<Vector3> storedPositions;
     internal Collider2D _collider;
@@ -53,6 +54,7 @@ public class ChildController : MonoBehaviour
     }
 
     public void CaughtByWitch(){
+        AudioSource.PlayClipAtPoint(scream, transform.position);
         Destroy(gameObject);
     }
 }
