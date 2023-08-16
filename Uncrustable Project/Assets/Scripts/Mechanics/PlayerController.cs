@@ -18,7 +18,7 @@ namespace Platformer.Mechanics
         public AudioClip respawnAudio;
         public AudioClip ouchAudio;
 
-        public IList<GameObject> childrenFollowing;
+        public Queue<GameObject> childrenFollowing;
         public static int followDistance = 100;
         private List<Vector3> storedPositions;
 
@@ -54,7 +54,7 @@ namespace Platformer.Mechanics
             spriteRenderer = GetComponent<SpriteRenderer>();
             animator = GetComponent<Animator>();
             storedPositions = new List<Vector3>(); 
-            childrenFollowing = new List<GameObject>();
+            childrenFollowing = new Queue<GameObject>();
         }
 
         protected override void Update()
@@ -135,6 +135,14 @@ namespace Platformer.Mechanics
             targetVelocity = move * maxSpeed;
         }
 
+        public GameObject PopChildFromList(){
+            GameObject child = null;
+            while (childrenFollowing.Count > 0){
+                child = childrenFollowing.Dequeue();
+            }
+            return child;
+        }
+
         public enum JumpState
         {
             Grounded,
@@ -143,5 +151,7 @@ namespace Platformer.Mechanics
             InFlight,
             Landed
         }
+
+
     }
 }

@@ -15,7 +15,7 @@ namespace Platformer.Gameplay
 
         public override void Execute()
         {
-            Debug.Log("Child Hit!");
+            Debug.Log("Child found!");
 
             if (child.isCollected){
                 return;
@@ -26,7 +26,7 @@ namespace Platformer.Gameplay
 
             child.player = player.gameObject;
             child.childOrder = player.childrenFollowing.Count;
-            player.childrenFollowing.Add(child.gameObject);
+            player.childrenFollowing.Enqueue(child.gameObject);
         }
     }
 }
