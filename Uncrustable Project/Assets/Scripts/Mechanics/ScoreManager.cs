@@ -7,6 +7,8 @@ public class ScoreManager : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI scoreText, highScoreText;
 
+    static List<int> HighScores;
+
 
     private void Start()
     {
@@ -18,26 +20,49 @@ public class ScoreManager : MonoBehaviour
     {
         ScoreVariables.totalScore += amount;
         UpdateScoreText();
-        UpdateHighScore();
+        //UpdateHighScore();
     }
 
+   
+    /*
     public void UpdateHighScore()
     {
-        if (ScoreVariables.totalScore > PlayerPrefs.GetInt("HighScore", 0))
+        if (ScoreVariables.totalScore > PlayerPrefs.GetInt("HighScoreTemp", 0))
         {
-            /* this will save the high score on the user's computer, so it is saved between playthroughs. If the player uses a different computer, however,
-             * they will not be able to see their previous scores */
-            PlayerPrefs.SetInt("HighScore", ScoreVariables.totalScore);
+            PlayerPrefs.SetInt("HighScoreTemp", ScoreVariables.totalScore);
 
             // update the high score text dynamically
-            UpdateHighScoreText();
+            //UpdateHighScoreText();
         }
-    }
+    }*/
 
     public void UpdateHighScoreText()
     {
-        highScoreText.text = $"High Score: {PlayerPrefs.GetInt("HighScore", 0)}";
+        highScoreText.text = $"High Score: {PlayerPrefs.GetInt("HighScore1", 0)}";
     }
+
+    public static void UpdateAllOfHighScores()
+    {
+        // if this needs to be expanded to more than 5 scores, make this a foreach
+        HighScores = new List<int>();
+        HighScores.Add(PlayerPrefs.GetInt("HighScore1", 0));
+        HighScores.Add(PlayerPrefs.GetInt("HighScore2", 0));
+        HighScores.Add(PlayerPrefs.GetInt("HighScore3", 0));
+        HighScores.Add(PlayerPrefs.GetInt("HighScore4", 0));
+        HighScores.Add(PlayerPrefs.GetInt("HighScore5", 0));
+        HighScores.Add(ScoreVariables.totalScore);
+
+        // if current score is too low, nothing will change. If it's high, it will replace one of the other high scores
+        HighScores.Sort();
+        HighScores.Reverse();
+
+        PlayerPrefs.SetInt("HighScore1", HighScores[0]);
+        PlayerPrefs.SetInt("HighScore2", HighScores[1]);
+        PlayerPrefs.SetInt("HighScore3", HighScores[2]);
+        PlayerPrefs.SetInt("HighScore4", HighScores[3]);
+        PlayerPrefs.SetInt("HighScore5", HighScores[4]);
+    }
+
 
     public void UpdateScoreText()
     {

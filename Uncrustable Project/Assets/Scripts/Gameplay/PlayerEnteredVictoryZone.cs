@@ -20,6 +20,7 @@ namespace Platformer.Gameplay
         {
             model.player.animator.SetTrigger("victory");
             model.player.controlEnabled = false;
+            ScoreManager.UpdateAllOfHighScores();
             SceneManager.LoadScene("UI/Scenes/Victory");
 
         }
