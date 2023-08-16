@@ -22,7 +22,7 @@ namespace Platformer.Gameplay
         {
             Debug.Log("Player hit by witch");
             var child = player.PopChildFromList();
-            if (child is not null){
+            if (child != null){
                 var childController = child.GetComponent<ChildController>();
                 childController.CaughtByWitch();
                 Debug.Log("Child eaten while following the player.");
