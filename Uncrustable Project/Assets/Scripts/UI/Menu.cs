@@ -13,6 +13,11 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene("UI/Scenes/High Scores");
     }
 
+    public void OnAboutButton()
+    {
+        SceneManager.LoadScene("UI/Scenes/About");
+    }
+
     public void OnQuitButton()
     {
         Application.Quit();
