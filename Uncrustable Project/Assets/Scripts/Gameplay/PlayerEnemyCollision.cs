@@ -21,14 +21,11 @@ namespace Platformer.Gameplay
         public override void Execute()
         {
             Debug.Log("Player hit by witch");
-            var numOfChildren = player.childrenFollowing.Count;
-            if (numOfChildren > 0){
-                var childGameObject = player.childrenFollowing[numOfChildren-1];
-                player.childrenFollowing.RemoveAt(numOfChildren-1);
-
-                var childController = childGameObject.GetComponent<ChildController>();
+            var child = player.PopChildFromList();
+            if (child is not null){
+                var childController = child.GetComponent<ChildController>();
                 childController.CaughtByWitch();
-                Debug.Log("Child eaten! It was tragic.");
+                Debug.Log("Child eaten while following the player.");
             }
             else
             {
