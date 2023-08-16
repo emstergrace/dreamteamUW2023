@@ -74287,9 +74287,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1671989565}
   - component: {fileID: 1671989567}
-  - component: {fileID: 1671989566}
+  - component: {fileID: 1671989568}
   m_Layer: 0
-  m_Name: VictoryZone
+  m_Name: GoToLevelTwoZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74310,18 +74310,6 @@ Transform:
   m_Father: {fileID: 311588741}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1671989566
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1671989564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83b7b8893929d4d9094f6655d580fae1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1671989567
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -74367,6 +74355,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1671989568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671989564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fe9cb010d88e7541b672ee85c488fdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1678193928
 GameObject:
   m_ObjectHideFlags: 0
