@@ -28,6 +28,8 @@ namespace Platformer.Gameplay
 
                 var childController = childGameObject.GetComponent<ChildController>();
                 childController.CaughtByWitch();
+                Debug.Log("Child eaten! It was tragic.");
+                AudioSource.PlayClipAtPoint(witch.nomnomnom, witch.transform.position);
             }
             else
             {
