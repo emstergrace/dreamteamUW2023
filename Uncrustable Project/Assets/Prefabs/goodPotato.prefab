@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -1340347676527012416}
   - component: {fileID: -8825271556129585013}
   m_Layer: 0
-  m_Name: BadCorn
+  m_Name: goodPotato
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,8 +75,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b96a133cc50e93a4ba59e5a72b395f94, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.010915279, a: 1}
+  m_Sprite: {fileID: 21300000, guid: c3a28dc704db27943bd1dcade7f3a4ad, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -136,7 +136,7 @@ MonoBehaviour:
   tokenCollectAudio: {fileID: 8300000, guid: b5fd5116bfa1d974ab1352d0cbda602c, type: 3}
   randomAnimationStartTime: 0
   idleAnimation:
-  - {fileID: 21300000, guid: 67d926a0762712c478a86d70bd954c78, type: 3}
+  - {fileID: 21300000, guid: f0cb1323660d43640aa8198208993211, type: 3}
   collectedAnimation:
-  - {fileID: 21300000, guid: 67d926a0762712c478a86d70bd954c78, type: 3}
-  objectPointValue: -800
+  - {fileID: 21300000, guid: f0cb1323660d43640aa8198208993211, type: 3}
+  objectPointValue: 500
