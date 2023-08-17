@@ -30,6 +30,7 @@ namespace Platformer.Gameplay
                     player.audioSource.PlayOneShot(player.ouchAudio);
                 player.animator.SetTrigger("hurt");
                 player.animator.SetBool("dead", true);
+                ScoreManager.UpdateAllOfHighScores();
                 SceneManager.LoadScene("UI/Scenes/Game Over");
             }
         }

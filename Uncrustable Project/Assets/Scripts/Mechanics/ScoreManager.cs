@@ -20,21 +20,8 @@ public class ScoreManager : MonoBehaviour
     {
         ScoreVariables.totalScore += amount;
         UpdateScoreText();
-        //UpdateHighScore();
     }
 
-   
-    /*
-    public void UpdateHighScore()
-    {
-        if (ScoreVariables.totalScore > PlayerPrefs.GetInt("HighScoreTemp", 0))
-        {
-            PlayerPrefs.SetInt("HighScoreTemp", ScoreVariables.totalScore);
-
-            // update the high score text dynamically
-            //UpdateHighScoreText();
-        }
-    }*/
 
     public void UpdateHighScoreText()
     {
