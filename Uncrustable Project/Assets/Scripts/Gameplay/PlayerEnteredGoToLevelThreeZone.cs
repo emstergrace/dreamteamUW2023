@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 namespace Platformer.Gameplay
 {
 
-    public class PlayerEnteredGoToLevelTwoZone: Simulation.Event<PlayerEnteredGoToLevelTwoZone>
+    public class PlayerEnteredGoToLevelThreeZone: Simulation.Event<PlayerEnteredGoToLevelThreeZone>
     {
-        public GoToLevelTwoZone goToLevelTwoZone;
+        public GoToLevelThreeZone goToLevelThreeZone;
 
         PlatformerModel model = Simulation.GetModel<PlatformerModel>();
 

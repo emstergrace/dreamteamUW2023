@@ -6,16 +6,16 @@ using UnityEngine.SceneManagement;
 namespace Platformer.Gameplay
 {
 
-    public class PlayerEnteredGoToLevelThreeZone: Simulation.Event<PlayerEnteredGoToLevelThreeZone>
+    public class PlayerEnteredGoToLevelTwoZone: Simulation.Event<PlayerEnteredGoToLevelTwoZone>
     {
-        public GoToLevelThreeZone goToLevelThreeZone;
+        public GoToLevelTwoZone goToLevelTwoZone;
 
         PlatformerModel model = Simulation.GetModel<PlatformerModel>();
 
         public override void Execute()
         {
             model.player.controlEnabled = false;
-            SceneManager.LoadScene("Levels/Scenes/level3");
+            SceneManager.LoadScene("Levels/Scenes/level2");
         }
     }
 }
