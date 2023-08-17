@@ -26,6 +26,9 @@ namespace Platformer.Gameplay
                 var childController = child.GetComponent<ChildController>();
                 childController.CaughtByWitch();
                 Debug.Log("Child eaten while following the player.");
+
+                witch.ResetMovementSpeed();
+                witch.WaitForPreyToRun();
             }
             else
             {
