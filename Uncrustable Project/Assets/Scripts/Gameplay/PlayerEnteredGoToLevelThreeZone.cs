@@ -15,7 +15,7 @@ namespace Platformer.Gameplay
         public override void Execute()
         {
             model.player.controlEnabled = false;
-            SceneManager.LoadScene("Levels/Scenes/level2");
+            SceneManager.LoadScene("Levels/Scenes/level3");
         }
     }
 }
