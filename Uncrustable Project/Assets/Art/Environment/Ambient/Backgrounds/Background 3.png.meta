@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6755beccd47877c40958a37057e5fdaf
+guid: a915e428ca6bc7f47bc2398157ef5c51
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,91 +121,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Background overlayer 3 _0
-      rect:
-        serializedVersion: 2
-        x: 30
-        y: 0
-        width: 29
-        height: 180
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5a9acb10280a6c34a8d640d068b5fc6a
-      internalID: 1894907823
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Background overlayer 3 _1
-      rect:
-        serializedVersion: 2
-        x: 55
-        y: 138
-        width: 187
-        height: 42
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7d45076e38a1f69439c31e9846d5075e
-      internalID: 1470796411
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Background overlayer 3 _2
-      rect:
-        serializedVersion: 2
-        x: 242
-        y: 0
-        width: 78
-        height: 180
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3d5fc62b683994f42977ade4753da7a4
-      internalID: 1334830068
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Background overlayer 3 _3
-      rect:
-        serializedVersion: 2
-        x: 59
-        y: 0
-        width: 183
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cede757822eccf644b489a2d09026c8f
-      internalID: -1173570598
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -216,11 +132,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Background overlayer 3 _0: 1894907823
-      Background overlayer 3 _1: 1470796411
-      Background overlayer 3 _2: 1334830068
-      Background overlayer 3 _3: -1173570598
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
