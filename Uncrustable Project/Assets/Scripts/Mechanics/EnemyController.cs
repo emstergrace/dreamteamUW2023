@@ -14,7 +14,7 @@ namespace Platformer.Mechanics
     public class EnemyController : MonoBehaviour
     {
         private static float MAX_WITCH_SPEED = 4.4f;
-        private static float WITCH_PAUSE_TIME = 0.5f;
+        private static float WITCH_PAUSE_TIME = 2.0f;
         public AudioClip nomnomnom;
         public AudioClip childrenAreDelicious;
         internal AnimationController control;
@@ -37,6 +37,9 @@ namespace Platformer.Mechanics
         }
 
         void OnTriggerEnter2D(Collider2D collision) {
+            if (Pause > 0f){
+                return;
+            }
             var player = collision.gameObject.GetComponent<PlayerController>();
             var child = collision.gameObject.GetComponent<ChildController>();
             if (player != null)
