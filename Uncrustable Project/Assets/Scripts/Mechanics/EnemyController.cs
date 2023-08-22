@@ -13,8 +13,10 @@ namespace Platformer.Mechanics
     [RequireComponent(typeof(AnimationController), typeof(Collider2D))]
     public class EnemyController : MonoBehaviour
     {
-        private static float MAX_WITCH_SPEED = 4.4f;
-        private static float WITCH_PAUSE_TIME = 2.0f;
+        [SerializeField]
+        public float MAX_WITCH_SPEED = 4.4f;
+        [SerializeField]
+        public float WITCH_PAUSE_TIME = 2.0f;
         public AudioClip nomnomnom;
         public AudioClip childrenAreDelicious;
         internal AnimationController control;
