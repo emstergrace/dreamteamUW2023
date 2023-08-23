@@ -163,6 +163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scream: {fileID: 8300000, guid: 540e87cf2daee2c419e7fb5079c277b4, type: 3}
+  childPointValue: 10000
 --- !u!95 &8236715672943169705
 Animator:
   serializedVersion: 5

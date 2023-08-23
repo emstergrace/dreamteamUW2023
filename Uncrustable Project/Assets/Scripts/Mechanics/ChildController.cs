@@ -18,6 +18,9 @@ public class ChildController : MonoBehaviour
     internal AudioSource _audio;
     SpriteRenderer spriteRenderer;
 
+    [SerializeField]
+    public int childPointValue;
+
     public Bounds Bounds => _collider.bounds;
 
     void Awake()
@@ -32,8 +35,11 @@ public class ChildController : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         var player = collision.gameObject.GetComponent<PlayerController>();
+
         if (player != null)
         {
+            GameObject.FindGameObjectWithTag("ScoreManager").GetComponent<ScoreManager>().AddScore(childPointValue);
+
             var ev = Schedule<PlayerChildCollision>();
             ev.player = player;
             ev.child = this;
