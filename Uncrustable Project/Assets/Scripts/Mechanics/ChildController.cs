@@ -32,7 +32,7 @@ public class ChildController : MonoBehaviour
         isCollected = false;
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         var player = collision.gameObject.GetComponent<PlayerController>();
 
