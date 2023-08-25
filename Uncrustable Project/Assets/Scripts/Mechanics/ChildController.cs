@@ -12,8 +12,8 @@ public class ChildController : MonoBehaviour
     public GameObject player {get; set;}
     public int childOrder {get; set;}
     public AudioClip scream;
-    public static int followDistance = 50;
-    private List<Vector3> storedPositions;
+    public static int followDistance = 10;
+    private Queue<Vector3> storedPositions;
     internal Collider2D _collider;
     internal AudioSource _audio;
     SpriteRenderer spriteRenderer;
@@ -28,11 +28,11 @@ public class ChildController : MonoBehaviour
         _collider = GetComponent<Collider2D>();
         _audio = GetComponent<AudioSource>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        storedPositions = new List<Vector3>(); 
+        storedPositions = new Queue<Vector3>(); 
         isCollected = false;
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         var player = collision.gameObject.GetComponent<PlayerController>();
 
@@ -49,12 +49,11 @@ public class ChildController : MonoBehaviour
     void Update()
     {
         if (isCollected){
-            storedPositions.Add(player.transform.position);
+            storedPositions.Enqueue(player.transform.position);
 
             if(storedPositions.Count > (followDistance * (childOrder+1)))
             {
-                gameObject.transform.position = storedPositions[0]; //move the player
-                storedPositions.RemoveAt (0); //delete the position that player just move to
+                gameObject.transform.position = storedPositions.Dequeue();
             }
         }
     }

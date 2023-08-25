@@ -17,7 +17,6 @@ namespace Platformer.Mechanics
         public AudioClip jumpAudio;
         public AudioClip respawnAudio;
         public AudioClip ouchAudio;
-
         public Queue<GameObject> childrenFollowing;
         public static int followDistance = 100;
         private List<Vector3> storedPositions;
@@ -137,7 +136,7 @@ namespace Platformer.Mechanics
 
         public GameObject PopChildFromList(){
             GameObject child = null;
-            while (childrenFollowing.Count > 0){
+            if (childrenFollowing.Count > 0){
                 child = childrenFollowing.Dequeue();
             }
             return child;
