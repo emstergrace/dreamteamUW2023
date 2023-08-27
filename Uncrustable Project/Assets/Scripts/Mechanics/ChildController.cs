@@ -12,11 +12,13 @@ public class ChildController : MonoBehaviour
     public GameObject player {get; set;}
     public int childOrder {get; set;}
     public AudioClip scream;
-    public static int followDistance = 10;
+    public static int followDistance = 40;
     private Queue<Vector3> storedPositions;
     internal Collider2D _collider;
     internal AudioSource _audio;
     SpriteRenderer spriteRenderer;
+    internal Vector3 currentDestination;
+    internal float moveSpeed = 200f;
 
     [SerializeField]
     public int childPointValue;
@@ -30,6 +32,7 @@ public class ChildController : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         storedPositions = new Queue<Vector3>(); 
         isCollected = false;
+        currentDestination = transform.position;
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -49,11 +52,18 @@ public class ChildController : MonoBehaviour
     void Update()
     {
         if (isCollected){
-            storedPositions.Enqueue(player.transform.position);
+            CollectedFollow();
+        }
+    }
 
-            if(storedPositions.Count > (followDistance * (childOrder+1)))
-            {
-                gameObject.transform.position = storedPositions.Dequeue();
+    private void CollectedFollow(){
+        storedPositions.Enqueue(player.transform.position);
+
+        if(storedPositions.Count > (followDistance * (childOrder+1)))
+        {
+            transform.position = Vector3.MoveTowards(transform.position, currentDestination, moveSpeed * Time.deltaTime);
+            if (transform.position == currentDestination){
+                currentDestination = storedPositions.Dequeue();
             }
         }
     }

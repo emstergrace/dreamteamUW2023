@@ -18,8 +18,6 @@ namespace Platformer.Mechanics
         public AudioClip respawnAudio;
         public AudioClip ouchAudio;
         public Queue<GameObject> childrenFollowing;
-        public static int followDistance = 100;
-        private List<Vector3> storedPositions;
 
         /// <summary>
         /// Max horizontal speed of the player.
@@ -32,8 +30,8 @@ namespace Platformer.Mechanics
 
         public JumpState jumpState = JumpState.Grounded;
         private bool stopJump;
-        /*internal new*/ public Collider2D collider2d;
-        /*internal new*/ public AudioSource audioSource;
+        public Collider2D collider2d;
+        public AudioSource audioSource;
         public Health health;
         public bool controlEnabled = true;
 
@@ -52,7 +50,7 @@ namespace Platformer.Mechanics
             collider2d = GetComponent<Collider2D>();
             spriteRenderer = GetComponent<SpriteRenderer>();
             animator = GetComponent<Animator>();
-            storedPositions = new List<Vector3>(); 
+
             childrenFollowing = new Queue<GameObject>();
         }
 
