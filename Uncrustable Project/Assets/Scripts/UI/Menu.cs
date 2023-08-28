@@ -18,6 +18,11 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene("UI/Scenes/About");
     }
 
+    public void OnCreditsButton()
+    {
+        SceneManager.LoadScene("UI/Scenes/Credits");
+    }
+
     public void OnQuitButton()
     {
         Application.Quit();
