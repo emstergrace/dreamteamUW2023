@@ -6,6 +6,7 @@ TagManager:
   tags:
   - TutorialRequirement
   - ScoreManager
+  - Child
   layers:
   - Default
   - TransparentFX
@@ -45,6 +46,9 @@ TagManager:
     locked: 0
   - name: Background
     uniqueID: 2984288901
+    locked: 0
+  - name: Tree
+    uniqueID: 734312535
     locked: 0
   - name: Player Level
     uniqueID: 2610379017
