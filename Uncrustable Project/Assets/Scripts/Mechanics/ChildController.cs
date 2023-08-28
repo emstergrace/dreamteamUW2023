@@ -12,11 +12,10 @@ public class ChildController : MonoBehaviour
     public GameObject player {get; set;}
     public int childOrder {get; set;}
     public AudioClip scream;
-    public static int followDistance = 10;
+    public static int followDistance = 40;
     private Queue<Vector3> storedPositions;
     internal Collider2D _collider;
     internal AudioSource _audio;
-    SpriteRenderer spriteRenderer;
 
     [SerializeField]
     public int childPointValue;
@@ -27,7 +26,6 @@ public class ChildController : MonoBehaviour
     {
         _collider = GetComponent<Collider2D>();
         _audio = GetComponent<AudioSource>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
         storedPositions = new Queue<Vector3>(); 
         isCollected = false;
     }
