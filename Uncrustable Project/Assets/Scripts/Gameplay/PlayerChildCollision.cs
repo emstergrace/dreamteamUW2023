@@ -26,7 +26,7 @@ namespace Platformer.Gameplay
 
             child.player = player.gameObject;
             child.childOrder = player.childrenFollowing.Count;
-            player.childrenFollowing.Enqueue(child.gameObject);
+            player.childrenFollowing.Push(child.gameObject);
         }
     }
 }

@@ -17,10 +17,8 @@ namespace Platformer.Mechanics
         public AudioClip jumpAudio;
         public AudioClip respawnAudio;
         public AudioClip ouchAudio;
-        public Queue<GameObject> childrenFollowing;
-        public static int followDistance = 100;
-        private List<Vector3> storedPositions;
-
+        public Stack<GameObject> childrenFollowing;
+ 
         /// <summary>
         /// Max horizontal speed of the player.
         /// </summary>
@@ -52,8 +50,7 @@ namespace Platformer.Mechanics
             collider2d = GetComponent<Collider2D>();
             spriteRenderer = GetComponent<SpriteRenderer>();
             animator = GetComponent<Animator>();
-            storedPositions = new List<Vector3>(); 
-            childrenFollowing = new Queue<GameObject>();
+            childrenFollowing = new Stack<GameObject>();
         }
 
         protected override void Update()
@@ -137,11 +134,10 @@ namespace Platformer.Mechanics
         public GameObject PopChildFromList(){
             GameObject child = null;
             if (childrenFollowing.Count > 0){
-                child = childrenFollowing.Dequeue();
+                child = childrenFollowing.Pop();
             }
             return child;
         }
-
         public enum JumpState
         {
             Grounded,
