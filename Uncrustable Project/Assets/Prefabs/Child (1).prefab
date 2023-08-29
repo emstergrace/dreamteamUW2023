@@ -75,7 +75,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1684588279
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 4b308cb492c828347be37b32447f20e6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -163,7 +163,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scream: {fileID: 8300000, guid: 540e87cf2daee2c419e7fb5079c277b4, type: 3}
-  childPointValue: 10000
+  childPointValue: 100000
+  loseChildPointValue: 30000
 --- !u!95 &8236715672943169705
 Animator:
   serializedVersion: 5

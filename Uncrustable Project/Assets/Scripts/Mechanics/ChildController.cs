@@ -20,6 +20,9 @@ public class ChildController : MonoBehaviour
     [SerializeField]
     public int childPointValue;
 
+    [SerializeField]
+    public int loseChildPointValue;
+
     public Bounds Bounds => _collider.bounds;
 
     void Awake()
