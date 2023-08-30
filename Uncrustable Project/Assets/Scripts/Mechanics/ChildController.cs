@@ -13,12 +13,13 @@ public class ChildController : MonoBehaviour
     public GameObject player {get; set;}
     public int childOrder {get; set;}
     public AudioClip scream;
-    public static int followDistance = 10;
+    public static int followDistance = 5;
     private Queue<Vector3> storedPositions;
     internal Collider2D _collider;
     internal AudioSource _audio;
     private Vector3 _destination;
-    private float _movementSpeed = 10f;
+    private float _movementSpeed = 15f;
+    private float _childOffset = 0.25f;
 
     [SerializeField]
     public int childPointValue;
@@ -54,8 +55,8 @@ public class ChildController : MonoBehaviour
     void FixedUpdate()
     {
         if (isCollected){
-            storedPositions.Enqueue(player.transform.position);
-            Debug.Log("Queue new position");
+            var followPosition = new Vector3(player.transform.position.x, player.transform.position.y-_childOffset);
+            storedPositions.Enqueue(followPosition);
 
             if(storedPositions.Count > (followDistance * (childOrder+1)))
             {
