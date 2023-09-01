@@ -5,6 +5,7 @@ using Platformer.Gameplay;
 using static Platformer.Core.Simulation;
 using Platformer.Model;
 using Platformer.Core;
+using System.Data.Common;
 
 namespace Platformer.Mechanics
 {
@@ -18,6 +19,7 @@ namespace Platformer.Mechanics
         public AudioClip respawnAudio;
         public AudioClip ouchAudio;
         public Stack<GameObject> childrenFollowing;
+        public GameObject doll;
  
         /// <summary>
         /// Max horizontal speed of the player.
@@ -133,7 +135,9 @@ namespace Platformer.Mechanics
 
         public GameObject PopChildFromList(){
             GameObject child = null;
-            if (childrenFollowing.Count > 0){
+            if (doll != null){
+                child = doll;
+            } else if (childrenFollowing.Count > 0){
                 child = childrenFollowing.Pop();
             }
             return child;

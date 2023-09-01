@@ -13,10 +13,13 @@ public class ChildEnemyCollision : Simulation.Event<ChildEnemyCollision>
     PlatformerModel model = Simulation.GetModel<PlatformerModel>();
 
     public override void Execute(){
+        if (child.isDoll){
+            return;
+        }
         child.CaughtByWitch();
         Debug.Log("Child eaten! It was tragic.");
 
         witch.ResetMovementSpeed();
-        witch.WaitForPreyToRun();
+        witch.WaitForPreyToRun(witch.WITCH_PAUSE_TIME);
     }
 }

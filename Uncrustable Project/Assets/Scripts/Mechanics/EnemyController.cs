@@ -16,14 +16,13 @@ namespace Platformer.Mechanics
         [SerializeField]
         public float MAX_WITCH_SPEED = 4.4f;
         [SerializeField]
-        public float WITCH_PAUSE_TIME = 2.0f;
+        public readonly float WITCH_PAUSE_TIME = 2.0f;
         public AudioClip nomnomnom;
         public AudioClip childrenAreDelicious;
         internal AnimationController control;
         internal Collider2D _collider;
         internal AudioSource _audio;
         internal float movementSpeed;
-        SpriteRenderer spriteRenderer;
         public float Pause { get; set; }
 
         public Bounds Bounds => _collider.bounds;
@@ -33,9 +32,8 @@ namespace Platformer.Mechanics
             control = GetComponent<AnimationController>();
             _collider = GetComponent<Collider2D>();
             _audio = GetComponent<AudioSource>();
-            spriteRenderer = GetComponent<SpriteRenderer>();
             movementSpeed = .5f;
-            WaitForPreyToRun();
+            WaitForPreyToRun(WITCH_PAUSE_TIME);
         }
 
         void OnTriggerEnter2D(Collider2D collision) {
@@ -87,8 +85,8 @@ namespace Platformer.Mechanics
             movementSpeed = .5f;
         }
 
-        public void WaitForPreyToRun(){
-            Pause = WITCH_PAUSE_TIME;
+        public void WaitForPreyToRun(float pause){
+            Pause = pause;
         }
 
         private Vector3 CalculateDirectionToTarget(Transform targetTransform){
@@ -104,6 +102,8 @@ namespace Platformer.Mechanics
 
             foreach (var child in childrenGameObjects)
             {
+                if (child.GetComponent<ChildController>().isDoll)
+                    continue;
                 var childX = child.transform.position.x;
                 if(childX < lowestXValue){
                     lowestXValue = childX;

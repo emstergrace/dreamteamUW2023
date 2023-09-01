@@ -25,6 +25,7 @@ public class ChildController : MonoBehaviour
 
     [SerializeField]
     public int loseChildPointValue;
+    public bool isDoll = false;
 
     public Bounds Bounds => _collider.bounds;
 
@@ -53,7 +54,12 @@ public class ChildController : MonoBehaviour
 
     void FixedUpdate()
     {
+        
         if (isCollected){
+            if (isDoll && childOrder != player.GetComponent<PlayerController>().childrenFollowing.Count){
+                childOrder = player.GetComponent<PlayerController>().childrenFollowing.Count + 1;
+            }
+
             var followPosition = new Vector3(player.transform.position.x, player.transform.position.y-_childOffset);
             storedPositions.Enqueue(followPosition);
 
@@ -69,7 +75,10 @@ public class ChildController : MonoBehaviour
     }
 
     public void CaughtByWitch(){
-        AudioSource.PlayClipAtPoint(scream, transform.position);
+        if (scream != null){
+            AudioSource.PlayClipAtPoint(scream, transform.position);
+        }
+        
         Destroy(gameObject);
     }
 }

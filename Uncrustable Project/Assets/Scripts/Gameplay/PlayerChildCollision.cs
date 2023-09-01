@@ -26,7 +26,15 @@ namespace Platformer.Gameplay
 
             child.player = player.gameObject;
             child.childOrder = player.childrenFollowing.Count;
-            player.childrenFollowing.Push(child.gameObject);
+            if (child.isDoll){
+                player.doll = child.gameObject;
+            } else {
+                player.childrenFollowing.Push(child.gameObject);
+            }
+
+            if(player.doll != null){
+                player.doll.GetComponent<ChildController>().childOrder = player.childrenFollowing.Count + 1;
+            }
         }
     }
 }

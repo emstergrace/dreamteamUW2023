@@ -15,13 +15,22 @@ namespace Platformer.Gameplay
     {
         public EnemyController witch;
         public PlayerController player;
+        private readonly float REDUCE_STUN_TIME = -0.5f;
 
         PlatformerModel model = Simulation.GetModel<PlatformerModel>();
 
         public override void Execute()
         {
             Debug.Log("Player hit by witch");
-            var child = player.PopChildFromList();
+            GameObject child;
+            float witchStunTime = witch.WITCH_PAUSE_TIME;
+            if(player.doll != null){
+                child = player.doll;
+                player.doll = null;
+                witchStunTime += REDUCE_STUN_TIME;
+            } else {
+                child = player.PopChildFromList();
+            }
             if (child != null){
                 var childController = child.GetComponent<ChildController>();
                 childController.CaughtByWitch();
@@ -31,7 +40,7 @@ namespace Platformer.Gameplay
                 GameObject.FindGameObjectWithTag("ScoreManager").GetComponent<ScoreManager>().AddScore(loseChildPoints);
 
                 witch.ResetMovementSpeed();
-                witch.WaitForPreyToRun();
+                witch.WaitForPreyToRun(witchStunTime);
             }
             else
             {
