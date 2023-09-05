@@ -4,15 +4,12 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-public class PlayerTest
+public class DirectionalTest
 {
     // A Test behaves as an ordinary method
     [Test]
-    public void PlayerTestSimplePasses()
+    public void DirectionalTestSimplePasses()
     {
-        var gameObject = new GameObject();
-        var player = gameObject.AddComponent<PlayerController>();
-
-
+        Assert.AreEqual(4.4f,EnemyController.MAX_WITCH_SPEED);
     }
 }
