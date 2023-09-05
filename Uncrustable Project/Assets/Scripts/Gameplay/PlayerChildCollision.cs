@@ -2,7 +2,6 @@ using Platformer.Core;
 using Platformer.Mechanics;
 using Platformer.Model;
 using UnityEngine;
-using static UnityEngine.RuleTile.TilingRuleOutput;
 
 namespace Platformer.Gameplay
 {
