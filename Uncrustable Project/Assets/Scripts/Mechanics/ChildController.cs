@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Platformer.Gameplay;
 using Platformer.Mechanics;
+using Unity.VisualScripting;
 using UnityEngine;
 using static Platformer.Core.Simulation;
 
@@ -25,6 +26,10 @@ public class ChildController : MonoBehaviour
 
     [SerializeField]
     public int loseChildPointValue;
+
+    [SerializeField]
+    public AudioClip pickUpChildSound;
+
     public bool isDoll = false;
 
     public Bounds Bounds => _collider.bounds;
@@ -49,6 +54,11 @@ public class ChildController : MonoBehaviour
             var ev = Schedule<PlayerChildCollision>();
             ev.player = player;
             ev.child = this;
+
+            if (pickUpChildSound != null)
+            {
+                AudioSource.PlayClipAtPoint(pickUpChildSound, transform.position);
+            }
         }
     }
 

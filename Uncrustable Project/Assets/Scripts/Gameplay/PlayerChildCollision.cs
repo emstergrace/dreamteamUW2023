@@ -2,6 +2,7 @@ using Platformer.Core;
 using Platformer.Mechanics;
 using Platformer.Model;
 using UnityEngine;
+using static UnityEngine.RuleTile.TilingRuleOutput;
 
 namespace Platformer.Gameplay
 {
@@ -17,7 +18,7 @@ namespace Platformer.Gameplay
         {
             Debug.Log("Child found!");
 
-            if (child.isCollected){
+            if (child.isCollected) {
                 return;
             }
 

@@ -165,6 +165,8 @@ MonoBehaviour:
   scream: {fileID: 8300000, guid: 540e87cf2daee2c419e7fb5079c277b4, type: 3}
   childPointValue: 100000
   loseChildPointValue: 70000
+  pickUpChildSound: {fileID: 8300000, guid: 0a063ab6c7db22743af4f092e3ea1e06, type: 3}
+  isDoll: 0
 --- !u!95 &86443123089074213
 Animator:
   serializedVersion: 5

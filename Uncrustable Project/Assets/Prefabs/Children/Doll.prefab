@@ -162,9 +162,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6c9044cba1c5d04d9daa594435e90a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scream: {fileID: 8300000, guid: dec8bc04e5f546c489c7b5df14016d19, type: 3}
+  scream: {fileID: 8300000, guid: f616f643c99bfa74aa511b786e88da50, type: 3}
   childPointValue: 30000
   loseChildPointValue: 0
+  pickUpChildSound: {fileID: 8300000, guid: 31141c6a7085e344bb0d11195c305cbd, type: 3}
   isDoll: 1
 --- !u!95 &8236715672943169705
 Animator:
