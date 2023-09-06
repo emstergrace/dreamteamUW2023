@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scream: {fileID: 8300000, guid: f616f643c99bfa74aa511b786e88da50, type: 3}
-  childPointValue: 30000
+  childPointValue: 50000
   loseChildPointValue: 0
   pickUpChildSound: {fileID: 8300000, guid: 31141c6a7085e344bb0d11195c305cbd, type: 3}
   isDoll: 1
