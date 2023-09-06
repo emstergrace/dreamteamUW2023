@@ -19,7 +19,6 @@ namespace Platformer.Gameplay
 
         public override void Execute()
         {
-            Debug.Log("Player hit by witch");
             GameObject child;
             float witchStunTime = witch.WITCH_PAUSE_TIME;
             if(player.doll != null){

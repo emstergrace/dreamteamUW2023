@@ -17,6 +17,7 @@ namespace Platformer.Mechanics
         public float MAX_WITCH_SPEED = 4.4f;
         [SerializeField]
         public readonly float WITCH_PAUSE_TIME = 2.0f;
+        public float WITCH_BASE_SPEED = .5f;
         public AudioClip nomnomnom;
         public AudioClip childrenAreDelicious;
         internal AnimationController control;
