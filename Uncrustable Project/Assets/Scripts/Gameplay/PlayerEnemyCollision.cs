@@ -17,8 +17,6 @@ namespace Platformer.Gameplay
         public PlayerController player;
         private readonly float REDUCE_STUN_TIME = -0.5f;
 
-        PlatformerModel model = Simulation.GetModel<PlatformerModel>();
-
         public override void Execute()
         {
             Debug.Log("Player hit by witch");
@@ -34,7 +32,6 @@ namespace Platformer.Gameplay
             if (child != null){
                 var childController = child.GetComponent<ChildController>();
                 childController.CaughtByWitch();
-                Debug.Log("Child eaten while following the player.");
                 int loseChildPoints = -1 * childController.loseChildPointValue;
 
                 GameObject.FindGameObjectWithTag("ScoreManager").GetComponent<ScoreManager>().AddScore(loseChildPoints);

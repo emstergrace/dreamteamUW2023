@@ -44,14 +44,12 @@ namespace Platformer.Mechanics
             var child = collision.gameObject.GetComponent<ChildController>();
             if (player != null)
             {
-                Debug.Log("Player hit by witch");
                 var ev = Schedule<PlayerEnemyCollision>();
                 ev.player = player;
                 ev.witch = this;
             }
 
             if (child != null){
-                Debug.Log("Player hit by witch");
                 var ev = Schedule<ChildEnemyCollision>();
                 ev.child = child;
                 ev.witch = this;
