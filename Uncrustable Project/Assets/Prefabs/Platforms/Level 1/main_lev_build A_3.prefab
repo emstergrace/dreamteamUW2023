@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5420575607991622128}
   - component: {fileID: 5485840762859685301}
-  - component: {fileID: -384195692216185349}
+  - component: {fileID: 4900110079475572751}
   m_Layer: 0
   m_Name: main_lev_build A_3
   m_TagString: Untagged
@@ -85,8 +85,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &-384195692216185349
-PolygonCollider2D:
+--- !u!61 &4900110079475572751
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -127,12 +127,6 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.060264587, y: 0.15999985}
-      - {x: -0.08, y: 0.16}
-      - {x: -0.08, y: -0.16}
-      - {x: 0.08, y: -0.16}
-      - {x: 0.08000183, y: 0.14030027}
-      - {x: 0.07000168, y: 0.1506845}
-  m_UseDelaunayMesh: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.32}
+  m_EdgeRadius: 0
