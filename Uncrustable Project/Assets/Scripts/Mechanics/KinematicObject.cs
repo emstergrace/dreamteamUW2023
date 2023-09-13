@@ -12,7 +12,7 @@ namespace Platformer.Mechanics
         /// <summary>
         /// The minimum normal (dot product) considered suitable for the entity sit on.
         /// </summary>
-        public float minGroundNormalY = .1f;
+        public float minGroundNormalY = .65f;
 
         /// <summary>
         /// A custom gravity coefficient applied to this entity.
@@ -136,7 +136,7 @@ namespace Platformer.Mechanics
                 for (var i = 0; i < count; i++)
                 {
                     var currentNormal = hitBuffer[i].normal;
-                    Debug.Log(currentNormal.y + " " + minGroundNormalY);
+
                     //is this surface flat enough to land on?
                     if (currentNormal.y > minGroundNormalY)
                     {
